@@ -439,6 +439,8 @@ def shift_and_overlay(target_cell, cap_cell, dx=0, dy=0):
 
 def patch_cking_main(b: bytes) -> bytes:
     tglp, cwdh_off, widths, cmap_offs, cp_to_glyph, scan_pairs = parse_bffnt_maps(b)
+    # Runtime LatteAddrLib tile mode 4: slice rotation = 2; bank XOR is page & 3.
+    tglp['sheet_swizzles'] = [(page % 4) * 0x200 for page in range(tglp['nsh'])]
     # Decode all sheets
     sheets_raw = []
     sheets_decoded = []
@@ -446,7 +448,7 @@ def patch_cking_main(b: bytes) -> bytes:
         soff = tglp["doff"] + s * tglp["ssz"]
         raw = bytearray(b[soff:soff+tglp["ssz"]])
         sheets_raw.append(raw)
-        sheets_decoded.append(decode_sheet(raw, tglp["sw"], tglp["sh"]))
+        sheets_decoded.append(decode_sheet(raw, tglp["sw"], tglp["sh"], tglp['sheet_swizzles'][s]))
 
     # Extract reference cells in CKingMain:
     # Existing in CKingMain: a, e, i, o, u, c, A, E, I, O, U, C, á, à, â, é, ê, í, ó, ç, Á, É, Î, ~
@@ -587,9 +589,9 @@ def patch_cking_main(b: bytes) -> bytes:
 def patch_cking_main_l(b: bytes) -> bytes:
     """Add PT-BR accented glyphs to CKingMainL.bffnt (271/288 cells used, 17 free slots)."""
     tglp, cwdh_off, widths, cmap_offs, cp_to_glyph, scan_pairs = parse_bffnt_maps(b)
-    # CKingMainL's original odd atlas pages use bank XOR 1. Both reads of
-    # reference glyphs and writes of new glyphs must use this texture layout.
-    tglp['sheet_swizzles'] = [(page % 2) * 0x200 for page in range(tglp['nsh'])]
+    # Runtime texture arrays rotate bank bits for every slice, not just odd pages.
+    # Read reference glyphs and write new glyphs through the same runtime layout.
+    tglp['sheet_swizzles'] = [(page % 4) * 0x200 for page in range(tglp['nsh'])]
     sheets_raw = []
     sheets_decoded = []
     for s in range(tglp["nsh"]):
@@ -748,7 +750,7 @@ def main():
     t_start = time.time()
     print("=" * 65)
     print("  The Legend of Zelda: The Wind Waker HD - Tradução PT-BR")
-    print("  Standalone Binary Patcher (v1.0.4)")
+    print("  Standalone Binary Patcher (v1.0.6)")
     print("=" * 65)
 
     if not os.path.exists(args.input):
