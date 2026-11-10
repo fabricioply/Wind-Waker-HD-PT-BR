@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.exe
+*.sav
+*.bak
+*.gci
+*.mp3
+*.zip
+*.pack

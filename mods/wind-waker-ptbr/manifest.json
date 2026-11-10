@@ -1,0 +1,12 @@
+{
+  "format_version": 1,
+  "id": "wind-waker-ptbr",
+  "name": "The Legend of Zelda: The Wind Waker HD - Tradução PT-BR",
+  "version": "1.0.4",
+  "game_id": "wwhd",
+  "kind": "content",
+  "author": "Antigravity Localization Team",
+  "description": "Tradução integral e fiel de The Legend of Zelda: The Wind Waker HD para Português do Brasil. Abrange 100% dos diálogos, NPCs, interface, mapas, itens, tutoriais e canções, com fontes acentuadas nativas.",
+  "minimum_manager_version": "1.5.0",
+  "content_dir": "content"
+}
