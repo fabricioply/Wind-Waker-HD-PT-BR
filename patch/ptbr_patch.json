@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "target": "permanent_2d_UsEnglish.pack",
     "total_archives": 68,
     "total_messages": 5040
@@ -4064,7 +4064,7 @@
       "14402": "{{TAG:0:3:0001}}Morci e Morci de Fogo{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Caverna do\nNinho do Dragão Coisa que Mais Detesta:\nProjéteis\n\nEstes morcegos voam por lugares escuros e\natacam qualquer coisa que se mova. Deve-se\nter muito cuidado com os Morcis de Fogo que\nsurgem durante atividades vulcânicas.{{TAG:0:3:ffff}}",
       "14403": "{{TAG:0:3:0001}}Magtail{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Caverna do Ninho do Dragão\nPonto Fraco: Água\n\nEstas criaturas são cobertas por um\nexoesqueleto duro que nem o calor da lava\nconsegue penetrar. Seus olhos são seu único\nponto fraco. Magtails podem ser erguidos e\ncarregados quando se enrolam em posição\ndefensiva.{{TAG:0:3:ffff}}",
       "14404": "{{TAG:0:3:0001}}Kargaroc{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Ilha do Ninho do Dragão\nEspólio: Penas Douradas\n\nEstes oponentes ferozes e perigosos\ncostumam carregar Koboblins e Moblins para a\nbatalha. Você pode usar seu Gancho de\nEscalada para roubar suas Penas Douradas.{{TAG:0:3:ffff}}",
-      "14405": "{{TAG:0:3:0001}}Chapervilha{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Bosque Proibido Talento:\nGirar\n\nEstas criaturas estranhas usam suas asas em\nforma de hélice para flutuar no ar. Podem ser\nfacilmente derrubadas do céu com projéteis\nou com a Folha Deko.{{TAG:0:3:ffff}}",
+      "14405": "{{TAG:0:3:0001}}Atacaxí{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Bosque Proibido Talento:\nGirar\n\nEstas criaturas estranhas usam suas asas em\nforma de hélice para flutuar no ar. Podem ser\nfacilmente derrubadas do céu com projéteis\nou com a Folha Deko.{{TAG:0:3:ffff}}",
       "14406": "{{TAG:0:3:0001}}Boko Baba{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Bosque Proibido Espólio:\nSementes de Boko Baba\n\nEstas criaturas que imitam Brotos Baba tentam\nengolir tudo o que se aproxima. Derrote-as\natordoando-as com um ataque em salto e\ncortando seus caules.{{TAG:0:3:ffff}}",
       "14407": "{{TAG:0:3:0001}}Espinhoso{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Bosque Proibido Coisa que\nMais Detesta: Folha Deko\n\nEstas criaturas atacam em grupo e grudam no\ncorpo da presa. Um ataque giratório é a\nmelhor forma de se livrar delas. São leves e\nvulneráveis a rajadas da Folha Deko.{{TAG:0:3:ffff}}",
       "14408": "{{TAG:0:3:0001}}Bubble Vermelho e Bubble Azul{{TAG:0:3:ffff}}{{TAG:0:3:0000}} Habitat: Torre\ndos Deuses Forma Mais Forte: Bubble Azul\n\nAs chamas azuis amaldiçoadas do Bubble Azul\nanulam o poder de todos os seus ataques.\nSuas chamas podem ser facilmente sopradas\ncom a Folha Deko.{{TAG:0:3:ffff}}",

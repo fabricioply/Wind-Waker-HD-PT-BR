@@ -2,17 +2,17 @@
 
 Tradução de fãs para **The Legend of Zelda: The Wind Waker HD**, destinada ao **ZeldaWWHDRecomp** no Windows x64.
 
-Versão atual: **1.0.6**. O patch contém 5.040 mensagens em 68 arquivos de texto, incluindo diálogos, itens e interface, e acrescenta glifos acentuados às fontes necessárias.
+Versão atual: **1.0.7**. O patch contém 5.040 mensagens em 68 arquivos de texto, incluindo diálogos, itens e interface, e acrescenta glifos acentuados às fontes necessárias.
 
 ## Instalar pelo executável
 
-1. Baixe **WindWakerHD-PTBR-Instalador-v1.0.6.exe** em [Releases](https://github.com/fabricioply/Wind-Waker-HD-PT-BR/releases/latest).
+1. Baixe **WindWakerHD-PTBR-Instalador-v1.0.7.exe** em [Releases](https://github.com/fabricioply/Wind-Waker-HD-PT-BR/releases/latest).
 2. Feche o jogo e execute o instalador.
 3. Confirme a pasta detectada ou selecione a instalação do Recomp manualmente.
 4. Clique em **Instalar tradução**.
 5. Use o idioma **inglês** nas configurações do jogo, pois a tradução substitui o pacote de textos em inglês.
 
-O executável inclui os arquivos necessários, sem exigir Python ou uma instalação separada do .NET. Faz cópia de segurança, instala pelo ModManager e oferece a opção de restaurar o idioma original. Os saves não são alterados pelo instalador.
+O instalador verifica sozinho se há uma tradução mais nova nas Releases e pergunta se você quer atualizar (também há o botão **Verificar atualizações**). O executável inclui os arquivos necessários, sem exigir Python ou uma instalação separada do .NET. Faz cópia de segurança, instala pelo ModManager e oferece a opção de restaurar o idioma original. Os saves não são alterados pelo instalador.
 
 ## Gerar o mod a partir dos arquivos deste repositório
 

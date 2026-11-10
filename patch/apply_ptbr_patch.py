@@ -750,7 +750,7 @@ def main():
     t_start = time.time()
     print("=" * 65)
     print("  The Legend of Zelda: The Wind Waker HD - Tradução PT-BR")
-    print("  Standalone Binary Patcher (v1.0.6)")
+    print("  Standalone Binary Patcher (v1.0.7)")
     print("=" * 65)
 
     if not os.path.exists(args.input):
