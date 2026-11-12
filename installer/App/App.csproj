@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+  <OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWPF>true</UseWPF>
+  <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>WindWakerHD-Traducao-PTBR</AssemblyName>
+  <Version>1.0.9</Version><ApplicationIcon>Assets/app_icon.ico</ApplicationIcon>
+  <RuntimeIdentifier>win-x64</RuntimeIdentifier><SelfContained>true</SelfContained><PublishSingleFile>true</PublishSingleFile>
+  <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract><EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  <DebugType>none</DebugType><DebugSymbols>false</DebugSymbols><PublishTrimmed>false</PublishTrimmed>
+ </PropertyGroup>
+ <ItemGroup><ProjectReference Include="../Core/Core.csproj" /></ItemGroup>
+ <ItemGroup>
+  <Resource Include="Assets/paper.png" /><Resource Include="Assets/compass.png" />
+  <EmbeddedResource Include="Assets/payload.zip" LogicalName="payload.zip" />
+  <EmbeddedResource Include="Assets/DRI.mp3" LogicalName="DRI.mp3" />
+ </ItemGroup>
+</Project>
